@@ -1,6 +1,7 @@
 import random
 
 import locust
+
 from openstack_loadtest import base
 
 
