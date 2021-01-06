@@ -1,0 +1,8 @@
+tox
+pytest
+mypy
+flake8
+pep8-naming
+black
+isort
+Sphinx
