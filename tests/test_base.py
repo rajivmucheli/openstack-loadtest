@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest
 
-import pytest
-from unittest import mock
-
 from openstack_loadtest import base
 
 
