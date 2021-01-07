@@ -5,13 +5,17 @@
 #    pip-compile
 #
 appdirs==1.4.4
-    # via openstacksdk
+    # via
+    #   openstacksdk
+    #   virtualenv
 certifi==2020.12.5
     # via
     #   geventhttpclient
     #   requests
 cffi==1.14.4
     # via cryptography
+cfgv==3.2.0
+    # via pre-commit
 chardet==4.0.0
     # via requests
 click==7.1.2
@@ -24,8 +28,12 @@ decorator==4.4.2
     # via
     #   dogpile.cache
     #   openstacksdk
+distlib==0.3.1
+    # via virtualenv
 dogpile.cache==1.1.1
     # via openstacksdk
+filelock==3.0.12
+    # via virtualenv
 flask-basicauth==0.2.0
     # via locust
 flask==1.1.2
@@ -40,6 +48,8 @@ geventhttpclient==1.4.4
     # via locust
 greenlet==0.4.17
     # via gevent
+identify==1.5.11
+    # via pre-commit
 idna==2.10
     # via requests
 iso8601==0.1.13
@@ -68,7 +78,9 @@ munch==2.5.0
     # via openstacksdk
 netifaces==0.10.9
     # via openstacksdk
-openstacksdk>=0.52.0
+nodeenv==1.5.0
+    # via pre-commit
+openstacksdk==0.52.0
     # via -r requirements.in
 os-service-types==1.7.0
     # via
@@ -80,12 +92,16 @@ pbr==5.5.1
     #   openstacksdk
     #   os-service-types
     #   stevedore
+pre-commit==2.9.3
+    # via -r requirements.in
 psutil==5.8.0
     # via locust
 pycparser==2.20
     # via cffi
 pyyaml==5.3.1
-    # via openstacksdk
+    # via
+    #   openstacksdk
+    #   pre-commit
 pyzmq==20.0.0
     # via locust
 requests==2.25.1
@@ -100,12 +116,17 @@ six==1.15.0
     #   geventhttpclient
     #   keystoneauth1
     #   munch
+    #   virtualenv
 stevedore==3.3.0
     # via
     #   dogpile.cache
     #   keystoneauth1
+toml==0.10.2
+    # via pre-commit
 urllib3==1.26.2
     # via requests
+virtualenv==20.2.2
+    # via pre-commit
 werkzeug==1.0.1
     # via
     #   flask
