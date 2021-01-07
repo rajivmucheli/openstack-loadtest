@@ -45,8 +45,13 @@ Usage
 
     First install the project with pip
 
+    git clone https://github.com/hemna/openstack-loadtest
+    cd openstack-loadtest
+    (make sure you are using python3 binary for virtualenv)
+    virtualenv .venv
+    source .venv/bin/activate
     pip install .
 
-    This will install locust as a dep and allow you to run the tests
 
-    locust -f src/openstack_loadtest/cinder.py CinderUser -u10 -t 30s --headless
+    Run the load test for fetching the cinder volumes detail test
+    locust -f src/openstack_loadtest/cinder.py CinderUser --headless --tags volumes_info -u10 -t 30s
