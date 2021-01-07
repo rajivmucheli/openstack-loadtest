@@ -1,5 +1,5 @@
 openstack_loadtest
-================
+==================
 
 .. image:: https://github.com/hemna/openstack-loadtest/workflows/python/badge.svg
     :target: https://github.com/hemna/openstack-loadtest/actions
