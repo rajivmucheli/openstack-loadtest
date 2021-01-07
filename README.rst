@@ -41,17 +41,17 @@ Dependencies are defined in:
 Usage
 -----
 
-.. note::
 
-    First install the project with pip
+First install the project with pip
 
-    git clone https://github.com/hemna/openstack-loadtest
-    cd openstack-loadtest
-    (make sure you are using python3 binary for virtualenv)
-    virtualenv .venv
-    source .venv/bin/activate
-    pip install .
+* git clone https://github.com/hemna/openstack-loadtest
+* cd openstack-loadtest
+* virtualenv .venv
+  (make sure you are using python3 binary for virtualenv)
+* source .venv/bin/activate
+* pip install .
 
 
-    Run the load test for fetching the cinder volumes detail test
-    locust -f src/openstack_loadtest/cinder.py CinderUser --headless --tags volumes_info -u10 -t 30s
+Run the load test for fetching the cinder volumes detail test
+
+*  locust -f src/openstack_loadtest/cinder.py CinderUser --headless --tags volumes_info -u10 -t 30s
