@@ -52,6 +52,13 @@ First install the project with pip
 * pip install .
 
 
+Make sure you have a ~/.config/openstack/clouds.yaml configured to point
+to your openstack deployment.
+
+Then set the OS_CLOUD env var to use an entry in your ~/.config/openstack/clouds.yaml
+
+* export OS_CLOUD=devstack
+
 Run the load test for fetching the cinder volumes detail test
 
 *  locust -f src/openstack_loadtest/cinder.py CinderUser --headless --tags volumes_info -u10 -t 30s
