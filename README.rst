@@ -62,3 +62,7 @@ Then set the OS_CLOUD env var to use an entry in your ~/.config/openstack/clouds
 Run the load test for fetching the cinder volumes detail test
 
 *  locust -f src/openstack_loadtest/cinder.py CinderUser --headless --tags volumes_info -u10 -t 30s
+
+
+locust -f src/openstack_loadtest/barbican.py BarbicanUser --headless --tags secret_info -u5 -t 60s
+locust -f src/openstack_loadtest/glance.py GlanceUser --headless --tags images_info -u5 -t 60s
