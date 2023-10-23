@@ -52,7 +52,7 @@ First install the project with pip
 * pip install .
 
 
-Make sure you have a ~/.config/openstack/clouds.yaml configured to point
+Make sure you have a ~/.config/openstack/clouds.yaml (PRESENT IN DOWNLOADS FOLDER) configured to point
 to your openstack deployment.
 
 Then set the OS_CLOUD env var to use an entry in your ~/.config/openstack/clouds.yaml
