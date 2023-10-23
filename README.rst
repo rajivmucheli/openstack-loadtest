@@ -41,6 +41,7 @@ Dependencies are defined in:
 Usage
 -----
 
+repo is installed in 10.236.242.78, source .venv
 
 First install the project with pip
 
